@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4e3d3 !important;
+    font-family: Arial, sans-serif;
+}
+
+.contenido-principal {
+    background-color: #f4e3d3;
+    min-height: 100vh;
+}
+
+.contenido-principal h1,
+.contenido-principal p {
+    font-style: italic;
+}
+
+.pastel-navbar,
+.pastel-navbar * {
+    font-style: normal !important;
+}
+
+.pastel-navbar {
+    background: linear-gradient(90deg, #f28bb8, #f7a9c8);
+    border-bottom: 2px solid #e58eb2;
+}
+
+.pastel-navbar .navbar-brand,
+.pastel-navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.pastel-navbar .navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: 0.05em;
+}
+
+.pastel-navbar .nav-link:hover,
+.pastel-navbar .navbar-brand:hover {
+    color: #fff5fa !important;
+}
+
+.navbar-pink {
+    background: linear-gradient(90deg, #f9d5e5, #f7c8e0);
+    border-bottom: 2px solid #f3b6d0;
+}
+
+.navbar-pink .container {
+    max-width: 1140px;
+}
+
+.navbar-pink .navbar-toggler-icon {
+    filter: invert(1) opacity(0.95);
+}
+
+.navbar-pink .navbar-nav .btn-pink {
+    background-color: #f8bbc9;
+    border: 1px solid #f2a9bf;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.navbar-pink .navbar-nav .btn-pink:hover,
+.navbar-pink .navbar-nav .btn-pink:focus {
+    background-color: #f3a0b7;
+    color: #ffffff;
+}
+
+.catalogo-label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6f2a4b;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.btn-pink {
+    box-shadow: 0 4px 12px rgba(248, 187, 201, 0.25);
+}
+
+.imagen1 {
+    padding: 40px;
+    background-color: #fff8f2;
+    border: 10px solid #f4cde0;
+    margin: 40px;
+}
+
+.CONTENEDOR-imagen {
+    display: flex;
+}
+
+.carouselExample {
+    width: 100%;
+    max-width: 1000px;
+    margin: 8px auto 0;
+}
+
+.carouselExample img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.posicion-izquierda {
+    justify-content: flex-start;
+}
+
+.posicion-centro {
+    justify-content: center;
+}
+
+.posicion-derecha {
+    justify-content: flex-end;
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario ARTEMISA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(180deg, #fff4f8 0%, #fbe7f0 100%);
+      color: #5e2d40;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-card {
+      max-width: 720px;
+      margin: 60px auto;
+      background: #ffffff;
+      border: 1px solid #f4d1df;
+      border-radius: 24px;
+      box-shadow: 0 14px 30px rgba(200, 123, 159, 0.18);
+      padding: 32px;
+    }
+
+    .titulo {
+      font-weight: 700;
+      color: #7c2e4d;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      color: #7a2d4a;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .form-label {
+      font-weight: 600;
+      color: #6e344d;
+    }
+
+    .form-control, .form-select, textarea {
+      border: 1px solid #f0c6d8;
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: #fffdfd;
+    }
+
+    .form-control:focus, .form-select:focus, textarea:focus {
+      border-color: #eb8fb1;
+      box-shadow: 0 0 0 0.2rem rgba(235, 143, 177, 0.15);
+    }
+
+    .btn-pink {
+      background: linear-gradient(90deg, #f7b2cc, #ed7da7);
+      border: none;
+      color: white;
+      font-weight: 700;
+      border-radius: 12px;
+      padding: 12px 24px;
+    }
+
+    .btn-pink:hover {
+      background: linear-gradient(90deg, #ef8eb1, #e86797);
+      color: white;
+    }
+
+    .volver {
+      display: inline-block;
+      margin-top: 18px;
+      color: #7a2d4a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-card">
+      <div class="text-center">
+        <p class="titulo">Registro</p>
+        <h1>Formulario ARTEMISA</h1>
+      </div>
+
+      <form method="POST" action="formulario.php">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" name="apellido" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+          </div>
+
+          <div class="col-12">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+          </div>
+
+          <div class="col-12">
+            <label for="producto" class="form-label">Marca de interés</label>
+            <select class="form-select" id="producto" name="producto" required>
+              <option value="">Selecciona una marca</option>
+              <option value="Base">Artemisa</option>
+              <option value="Rubor">Atenea </option>
+              <option value="Labial">Montoc</option>
+              <option value="Brochas">Rare beauty</option>
+              <option value="Brochas">Sheglam</option>
+             
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu comentario..."></textarea>
+          </div>
+
+          <div class="col-12 text-center mt-3">
+            <button type="submit" class="btn btn-pink">Enviar registro</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="text-center">
+        <a href="PAGINA2.HTML" class="volver">Volver al catálogo</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
